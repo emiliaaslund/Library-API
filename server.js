@@ -1,14 +1,22 @@
 const express = require("express");
+const port = 5000;
+
+// Router
+const booksRouter = require("./router/books.router");
+
 const app = express();
-const db = require("./database.js");
 
-const PORT = 4001;
+//Middlewares
+app.use(express.json());
 
+//kör igång allt
+app.use(booksRouter);
+
+//homepage
 app.get("/", (req, res) => {
-  console.log("hello world");
-  res.json({ message: "Hello World" });
+  res.send("Hello, Welcome to the Library");
 });
 
-app.listen(PORT, () => {
-  console.log("Servern kör på 4001");
+app.listen(port, () => {
+  console.log(`Servern är igång i port ${port}.`);
 });

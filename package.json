@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "emilia åslund",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliaaslund/K2-Library-API.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliaaslund/K2-Library-API/issues"
+  },
+  "homepage": "https://github.com/emiliaaslund/K2-Library-API#readme",
   "dependencies": {
     "express": "^4.18.1",
     "md5": "^2.3.0",
